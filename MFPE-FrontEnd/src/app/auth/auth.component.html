@@ -1,0 +1,119 @@
+<!-- <div class="container">
+  <div class="row">
+    <div
+      class="
+        col-xs-12 col-sm-10 col-md-5 col-sm-offset-1 col-md-offset-2
+        row__content
+      "
+    >
+      <div class="spinner" *ngIf="isValidating" class="spinner">
+        <app-loading-spinner></app-loading-spinner>
+      </div>
+
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" *ngIf="!isValidating">
+        <div class="heading"><h2 class="text-center">Login Portal</h2></div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            placeholder="Enter username"
+            ngModel
+            required
+            #username="ngModel"
+          />
+          <span *ngIf="username.touched && !username.valid" style="color: red"
+            >Please enter username</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            name="password"
+            ngModel
+            required
+            #password="ngModel"
+          />
+          <span *ngIf="!password.valid && password.touched" style="color: red"
+            >Please enter password</span
+          >
+        </div>
+        <div class="btn-submit">
+        <button type="submit" class="btn btn-primary" [disabled]="!f.valid">
+          Login &rarr;
+        </button>
+        </div>
+      </form>
+
+      <app-alert
+        [message]="error"
+        *ngIf="error"
+        (close)="handleError()"
+      ></app-alert>
+    </div>
+  </div>
+</div> -->
+<body class="login">
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-12 col-sm-7 col-md-6 m-auto">
+  <div class="card login-form border-0 shadow">
+   <div class="card-body">
+     <div class="spinner justify-content-center" *ngIf="isValidating" class="spinner">
+      <app-loading-spinner></app-loading-spinner>
+    </div> 
+    <h1 class="card-title text-center">Login</h1>
+    <div class="card-text">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" *ngIf="!isValidating">
+        <div class="form-group">
+          <!-- <label for="username">Username</label> -->
+         
+          <input
+          type="text"
+          class="form-control my-4 py-2"
+          name="username"
+          placeholder="Enter username"
+          ngModel
+          required
+          #username="ngModel"
+        />
+        <span *ngIf="username.touched && !username.valid" style="color: red"
+        >Please enter username</span
+      >
+        </div>
+        <div class="form-group">
+          <!-- <label for="password">Password</label> -->
+          <input
+          type="password"
+          class="form-control my-4 py-2"
+          name="password"
+          placeholder="Enter password"
+          ngModel
+          required
+          #password="ngModel"
+        />
+        <span *ngIf="!password.valid && password.touched" style="color: red"
+            >Please enter password</span
+          >
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn-submit btn-md" [disabled]="!f.valid">Login</button>
+        </div>
+      </form>
+      <app-alert
+        [message]="error"
+        *ngIf="error"
+        (close)="handleError()"
+      ></app-alert>
+    </div>
+   </div>
+  </div>
+</div>
+</div>
+</div>
+</body>

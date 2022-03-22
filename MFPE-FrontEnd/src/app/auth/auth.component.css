@@ -1,0 +1,104 @@
+/* button {
+  margin: 30px 0px 2px 2px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.container {
+  height: 75vh;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.row__content {
+  height: 90%;
+  border: 1px solid rgb(209, 209, 209);
+  padding: 40px;
+  border-radius: 8%;
+  position: relative;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+.spinner {
+  position: absolute;
+  top: 38%;
+  left: 42%;
+}
+
+.btn {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  padding: 12.5px 35px;
+  border-radius: 100px;
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+}
+
+.svg-icon {
+  height: 40px;
+  width: 40px;
+} */
+.global-container{
+ height:100%;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+}
+form{
+  margin-top: 30px;
+  padding-top: 10px;
+}
+.spinner {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+}
+.btn-submit{
+  background-color: #6014a7;
+  color: white;
+  border-radius: 25px;
+  padding: 6px 20px;
+}
+.btn-submit:hover{
+  background-color: #fff;
+  color: #6014a7;
+}
+.form-control{
+  
+  border-radius: 2rem !important;
+}
+.form-control:focus
+{
+  border-color: #cc68e0;
+  box-shadow: 0 0 0 0.2rem rgba(204, 180, 219, 0.959);
+}
+.login{
+  background-image:linear-gradient(to right top, #561280, #532e90, #51429f, #4f55ac, #5066b7, #566fbc, #5c77c0, #6380c4, #6c83c5, #7486c5, #7b89c6, #828cc6);
+
+  height:100vh;
+}

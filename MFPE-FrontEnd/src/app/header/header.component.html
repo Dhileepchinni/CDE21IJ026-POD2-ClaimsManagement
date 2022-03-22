@@ -1,0 +1,106 @@
+<div class="header">
+  <!-- <nav
+    class="nav navbar navbar-expand-lg navbar-light bg-primary navbar-fixed-top"
+  > -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> >
+      <a class="navbar-brand" routerLink="home"
+      ><img
+        src="../../assets/img/aurora-dao.svg"
+        class="brand-logo"
+        alt="brand logo"
+      />EasyClaim</a
+    >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- <a class="navbar-brand" routerLink="home"
+      ><img
+        src="../../assets/img/aurora-dao.svg"
+        class="brand-logo"
+        alt="brand logo"
+      />EasyClaim</a
+    > >
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-items">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" *ngIf="!isAuthenticated">
+          <a class="nav-link" routerLink="auth">Login</a>
+        </li>
+
+        <div class="dropdown" routerLinkActive="active" *ngIf="isAuthenticated">
+          <div class="projects">
+            <button class="nav-link">
+              <img
+                src="../../assets/img/user.png"
+                alt="user icon"
+                class="user-icon"
+              />{{ username }}
+            </button>
+            <ul>
+              <li [routerLink]="[username, 'viewClaims']"><a>View Bills</a></li>
+              <li [routerLink]="[username, 'getClaimStatus']">
+                <a>View Claim Status</a>
+              </li>
+              <li [routerLink]="[username, 'submitClaim']">
+                <a>Submit Claim</a>
+              </li>
+              <li (click)="onLogout()"><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="home">
+        <img
+        src="../../assets/img/logo.png"
+        class="brand-logo"
+        alt="brand logo"
+      />EasyClaim</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#route" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="route">
+        <ul class="navbar-nav">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link active" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item"  routerLinkActive="active" *ngIf="!isAuthenticated">
+            <a class="nav-link" routerLink="auth">Login</a>
+          </li>
+          <div class="dropdown" routerLinkActive="active" *ngIf="isAuthenticated">
+            <div class="projects">
+              <button class="nav-link">
+                <div class="display">
+                <!-- <img
+                  src="../../assets/img/user.png"
+                  alt="user icon"
+                  class="user-icon"
+                /> -->
+                {{ username }} 
+                </div>
+              </button>
+              <ul class="menu">
+                <li [routerLink]="[username, 'viewClaims']"><a>View Bills</a></li>
+                <li [routerLink]="[username, 'getClaimStatus']">
+                  <a>View Claim Status</a>
+                </li>
+                <li [routerLink]="[username, 'submitClaim']">
+                  <a>Submit Claim</a>
+                </li>
+                <li (click)="onLogout()"><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

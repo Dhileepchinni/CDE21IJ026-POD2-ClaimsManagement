@@ -1,0 +1,154 @@
+<!-- <div class="parent">
+  <div class="container" *ngIf="isBillMode">
+    <div class="heading">
+      <h2 class="heading--highlight highlight">Bill Status</h2>
+    </div>
+    <div class="bill__details">
+      <div class="billrow--detail">
+        <h5>Last Paid Date:</h5>
+        <p class="bill--tag">{{ lastPaidDate }}</p>
+      </div>
+
+      <div class="billrow--detail">
+        <h5>Premium Amount Due:</h5>
+        <p class="bill--tag">{{ lateCharge }}</p>
+      </div>
+      <div class="billrow--detail">
+        <h5>Due Date:</h5>
+        <p class="bill--tag">{{ dueDate }}</p>
+      </div>
+    </div>
+  </div> -->
+  <body class="login">
+  <div class="container mt-5" *ngIf="isBillMode">
+ <div class="row">
+
+        <div class="col-8 col-sm-7 col-md-6 m-auto">
+
+            <div class="card bill-result border-0 shadow">
+
+                <div class="card-body">
+
+                    <div class="parent">
+
+                        <h1 class=" card-title text-center">Bill Status
+
+                        </h1>
+
+                        <div class="billrow--detail">
+
+                            <h5>Last Paid Date:</h5>
+
+                            <p class="bill--tag">{{ lastPaidDate }}</p>
+
+                        </div>
+
+                        <div class="billrow--detail">
+
+                            <h5>Premium Amount Due:</h5>
+
+                            <p class="bill--tag">{{ lateCharge }}</p>
+
+                        </div>
+
+                        <div class="billrow--detail">
+
+                            <h5>Due Date:</h5>
+
+                            <p class="bill--tag">{{ dueDate }}</p>
+
+                        </div>
+                   </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>   
+
+<div class="container mt-5" *ngIf="!isBillMode">
+
+  <div class="row">
+
+      <div class="col-8 col-sm-7 col-md-6 m-auto">
+
+          <div class="card bill-result border-0 shadow">
+
+              <div class="card-body">
+
+                  <div class="parent">
+
+                      <h1 class=" card-title text-center">
+
+                          Claim Status
+
+                      </h1>
+                      <div class="statusrow--detail">
+
+                        <h5>Claim Id:</h5>
+
+                        <p class="bill--tag bold">{{ claimId }}</p>
+
+                      </div>
+
+               
+
+                      <div class="statusrow--detail">
+
+                        <h5>Claim Status:</h5>
+
+                        <p class="bill--tag bold " style="margin-left:20px">{{ claimStatus }}</p>
+
+                      </div>
+
+               
+
+                      <div class="statusrow--detail">
+
+                        <h5>Description:</h5>
+
+                        <p class="bill--tag">{{ claimDescription }}
+
+                        </p>
+
+                      </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>   
+
+  <!-- Status Mode -->
+  <!-- <div class="container" *ngIf="!isBillMode">
+    <div class="heading">
+      <h2 class="heading--highlight highlight">Claim Status</h2>
+    </div>
+    <div class="bill__details">
+      <div class="statusrow--detail">
+        <h5>Claim Id:</h5>
+        <p class="bill--tag bold">{{ claimId }}</p>
+      </div>
+
+      <div class="statusrow--detail">
+        <h5>Claim Status:</h5>
+        <p class="bill--tag bold">{{ claimStatus }}</p>
+      </div>
+
+      <div class="statusrow--detail">
+        <h5>description:</h5>
+        <p class="bill--tag">{{ claimDescription }}</p>
+      </div>
+    </div>
+  </div> -->
+</body>
